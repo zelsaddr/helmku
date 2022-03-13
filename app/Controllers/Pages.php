@@ -145,7 +145,7 @@ class Pages extends BaseController
                     return "ok";
                 }else{
                     unset($cartList[$idBarang]);
-                    session()->push($cartList);
+                    session()->push('cartList', $cartList);
                     return "ok";
                 }
             }else{
